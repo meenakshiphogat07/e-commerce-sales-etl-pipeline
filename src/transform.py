@@ -46,3 +46,12 @@ def remove_missing_values(df):
     print(f"\nRows removed due to missing values: {before - after}")
 
     return df
+
+def save_processed_data(df, output_path):
+    """Saves the processed DataFrame to a CSV file."""
+
+    try:
+        df.to_csv(output_path, index=False)
+        print(f"\nProcessed data saved to {output_path}")
+    except Exception as e:
+        print(f"\nError saving processed data: {e}")
