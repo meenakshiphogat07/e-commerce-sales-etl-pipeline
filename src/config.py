@@ -1,0 +1,5 @@
+DB_USER="postgres"
+DB_PASSWORD="12345678maya8439"
+DB_HOST="localhost"
+DB_PORT="5432"
+DB_NAME="ecommerce_etl"
